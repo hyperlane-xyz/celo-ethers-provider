@@ -1,34 +1,43 @@
 {
-  "name": "celo-ethers-provider",
-  "version": "0.0.0",
-  "description": "Celo Ethers Provider",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "rm -rf ./dist/ && rm tsconfig.tsbuildinfo & tsc",
-    "check": "rm tsconfig.tsbuildinfo & tsc --noEmit",
-    "prettier": "prettier --write ./src.ts",
-    "lint": "npm run prettier && eslint ./src.ts",
-    "lint:fix": "npm run prettier && eslint --fix ./src.ts",
-    "prepublishOnly": "npm run build",
-    "test": "npm run build && node ./test/test.js"
-  },
-  "keywords": [
-    "ethers",
-    "ethereum",
-    "provider"
-  ],
-  "author": "James Prestwich",
-  "license": "MIT",
-  "dependencies": {
-    "ethers": "^5.4.7"
-  },
+  "name": "@abacus-network/celo-ethers-provider",
+  "description": "Celo-compatible JSON RPC providers for Ethers.js ",
+  "version": "0.1.0",
   "devDependencies": {
     "@types/node": "^16.11.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ethers": "^5.6.8",
     "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
-  }
+    "typescript": "^4.7.2"
+  },
+  "homepage": "https://www.useabacus.network",
+  "keywords": [
+    "abacus",
+    "celo",
+    "ethers",
+    "provider"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "packageManager": "yarn@3.2.0",
+  "peerDependencies": {
+    "ethers": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abacus-network/celo-ethers-provider"
+  },
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "check": "tsc --noEmit",
+    "clean": "rm -rf ./dist ./tsconfig.tsbuildinfo",
+    "lint": "prettier && eslint ./src.ts",
+    "lint:fix": "npm run prettier && eslint --fix ./src.ts",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write ./src.ts",
+    "test": "npm run build && node ./test/test.js"
+  },
+  "types": "dist/index.d.ts"
 }
