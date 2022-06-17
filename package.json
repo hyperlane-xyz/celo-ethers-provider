@@ -1,6 +1,6 @@
 {
   "name": "@abacus-network/celo-ethers-provider",
-  "description": "Celo-compatible JSON RPC providers for Ethers.js ",
+  "description": "Celo-compatible JSON RPC providers for Ethers.js",
   "version": "0.1.0",
   "devDependencies": {
     "@types/node": "^16.11.0",
@@ -13,6 +13,9 @@
     "ts-node": "^10.8.1",
     "typescript": "^4.7.2"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://www.useabacus.network",
   "keywords": [
     "abacus",
