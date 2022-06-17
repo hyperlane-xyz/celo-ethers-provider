@@ -1,8 +1,8 @@
-const {
+import {
   CeloJsonRpcProvider,
   StaticCeloJsonRpcProvider,
   CeloWebsocketProvider,
-} = require('../dist');
+} from '../src.ts';
 
 async function testJsonRpc() {
   const provider = new CeloJsonRpcProvider(
@@ -31,11 +31,13 @@ async function testWsRpc() {
   console.log('Websocket Ok');
 }
 
-async function test() {
+async function main() {
   await testJsonRpc();
   await testStaticJsonRpc();
   await testWsRpc();
-  process.exit();
+  process.exit(0);
 }
 
-test();
+main()
+  .then(() => console.info('Get blocks test complete'))
+  .catch(console.error);

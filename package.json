@@ -10,6 +10,7 @@
     "eslint-config-prettier": "^8.5.0",
     "ethers": "^5.6.8",
     "prettier": "^2.4.1",
+    "ts-node": "^10.8.1",
     "typescript": "^4.7.2"
   },
   "homepage": "https://www.useabacus.network",
@@ -33,11 +34,11 @@
     "build": "yarn clean && tsc",
     "check": "tsc --noEmit",
     "clean": "rm -rf ./dist ./tsconfig.tsbuildinfo",
-    "lint": "prettier && eslint ./src.ts",
-    "lint:fix": "npm run prettier && eslint --fix ./src.ts",
-    "prepublishOnly": "npm run build",
+    "lint": "eslint ./src.ts",
     "prettier": "prettier --write ./src.ts",
-    "test": "npm run build && node ./test/test.js"
+    "test:blocks": "ts-node ./test/getBlocks.ts",
+    "test:contract": "ts-node test/useContract.ts",
+    "test:deploy": "ts-node test/deployContract.ts"
   },
   "types": "dist/index.d.ts"
 }
