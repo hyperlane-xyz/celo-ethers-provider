@@ -1,4 +1,10 @@
 .env
+
+node_modules
+
 dist
 tsconfig.tsbuildinfo
-node_modules
+
+.yarn/install-state.gz
+.yarn/cache
+yarn-error.log

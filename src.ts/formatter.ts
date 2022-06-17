@@ -2,7 +2,6 @@ import { Block } from '@ethersproject/abstract-provider';
 import { providers } from 'ethers';
 
 export class Formatter extends providers.Formatter {
-  // eslint-disable-next-line
   _block(value: any, format: any): Block {
     if (!value.gasLimit) {
       value.gasLimit = '0x0';
