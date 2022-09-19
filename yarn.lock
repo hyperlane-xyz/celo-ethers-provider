@@ -5,24 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@abacus-network/celo-ethers-provider@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@abacus-network/celo-ethers-provider@workspace:."
-  dependencies:
-    "@types/node": ^16.11.0
-    "@typescript-eslint/eslint-plugin": ^5.27.0
-    "@typescript-eslint/parser": ^5.27.0
-    eslint: ^8.16.0
-    eslint-config-prettier: ^8.5.0
-    ethers: ^5.6.8
-    prettier: ^2.4.1
-    ts-node: ^10.8.1
-    typescript: ^4.7.2
-  peerDependencies:
-    ethers: ^5
-  languageName: unknown
-  linkType: soft
-
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -467,6 +449,24 @@ __metadata:
   checksum: a824a1ec31591231e4bad5787641f59e9633827d0a2eaae131a288d33c9ef0290bd16fda8da6f7c0fcb014147865d12118df10db57f27f41e20da92369fcb3f1
   languageName: node
   linkType: hard
+
+"@hyperlane-xyz/celo-ethers-provider@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@hyperlane-xyz/celo-ethers-provider@workspace:."
+  dependencies:
+    "@types/node": ^16.11.0
+    "@typescript-eslint/eslint-plugin": ^5.27.0
+    "@typescript-eslint/parser": ^5.27.0
+    eslint: ^8.16.0
+    eslint-config-prettier: ^8.5.0
+    ethers: ^5.6.8
+    prettier: ^2.4.1
+    ts-node: ^10.8.1
+    typescript: ^4.7.2
+  peerDependencies:
+    ethers: ^5
+  languageName: unknown
+  linkType: soft
 
 "@jridgewell/resolve-uri@npm:^3.0.3":
   version: 3.0.7

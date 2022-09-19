@@ -1,13 +1,14 @@
-# @abacus-network/celo-ethers-provider
+
+# Celo Ethers Provider
 
 This library exports three Ethers.js JSON RPC providers: `CeloJsonRpcProvider`, `StaticCeloJsonRpcProvider`, and `CeloWebsocketProvider`. These providers handle the Celo's block format incompatibility to make them usable with the rest of Ethers.js
 
 ## Usage
 
-`yarn install @abacus-network/celo-ethers-provider`
+`yarn install @hyperlane-xyz/celo-ethers-provider`
 
 ```js
-import { StaticCeloJsonRpcProvider } from 'abacus-network/celo-ethers-provider';
+import { StaticCeloJsonRpcProvider } from 'hyperlane-xyz/celo-ethers-provider';
 
 const provider = new StaticCeloJsonRpcProvider(rpcUrl);
 ```
